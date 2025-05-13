@@ -16,7 +16,7 @@ struct LoginView: View {
                 // header
                 HeaderView(title: "To Do List", subtitle: "get shit done", angle: 15, background: .purple)
                 
-            // login form
+                // login form
                 Form {
                     if !viewModel.errorMessage.isEmpty {
                         Text(viewModel.errorMessage)
@@ -36,7 +36,7 @@ struct LoginView: View {
                     .padding()
                 }
                 .offset(y: -50)
-                    
+                
                 // create account
                 VStack {
                     Text("Don't have an account?")
